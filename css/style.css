@@ -4,20 +4,50 @@
 
 }
 
+#grid_wrapper {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
+    grid-template-rows: 100px minmax(500px, 1fr);
+    grid-template-areas: 
+    "he he"
+    "se ar"
+    "ar2 se2"
+    "fo fo"
+    ;
+}
+
+#grid_wrapper_about {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
+    grid-template-rows: 100px minmax(500px, 1fr);
+    grid-template-areas: 
+    "he he"
+    "ma ma"
+    "ma2 ma2"
+    "ar_a se_a"
+    "se_a2 ar_a2"
+    "ar_a3 se_a3"
+    "fo fo"
+    ;
+}
+
 body {
     margin: 0;
 }
 
-.header {
+header {
     padding: 30px;
     text-align: center;
     background: #1abc9c;
     color: white;
     font-size: 30px;
     overflow: hidden;
+    grid-area: he;
 }
 
-.header a {
+header a {
     color: black;
     text-align: center;
     padding: 12px;
@@ -27,15 +57,107 @@ body {
     border-radius: 4px;
 }
 
-.header a:hover {
+header a:hover {
     background-color: rgb(255, 255, 255);
     color: black;
   }
   
 
-.header a.active {
+header a.active {
     background-color: rgb(106, 198, 199);
     color: white;
   }
 
-  
+article {
+    grid-area: ar;
+    background: blue;
+    text-align: center;
+    padding: 200px;
+
+}
+
+section {
+    grid-area: se;
+    background: yellow;
+    text-align: center;
+    padding: 200px;
+}
+
+.article2 {
+    grid-area: ar2;
+    background: blue;
+    text-align: center;
+    padding: 200px;
+
+}
+
+.section2 {
+    grid-area: se2;
+    background: yellow;
+    text-align: center;
+    padding: 200px;
+}
+
+
+footer {
+    background-color: red;
+    grid-area: fo;
+    text-align: center;
+    padding: 15px;
+}
+
+main {
+    text-align: center;
+    grid-area: ma2;
+    background-image: url("/img/animals/animales.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    
+}
+
+.main2 {
+    text-align: center;
+    grid-area: ma;
+    background-color: coral;
+}
+
+.article_about {
+    background: coral;
+    grid-area: ar_a;
+    margin-left: 100px;
+
+}
+.article_about_2 {
+    background: coral;
+    grid-area: ar_a2;
+    margin-right: 100px;
+
+}
+
+.article_about_3 {
+    background: coral;
+    grid-area: ar_a3;
+    margin-left: 100px;
+}
+
+.section_about {
+    background: greenyellow;
+    grid-area: se_a;
+    margin-right: 100px;
+
+}
+
+.section_about_2 {
+    background: greenyellow;
+    grid-area: se_a2;
+    margin-left: 100px;
+    
+}
+
+.section_about_3 {
+    background: greenyellow;
+    grid-area: se_a3;
+    margin-right: 100px;
+}
