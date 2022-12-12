@@ -21,7 +21,7 @@
     display: grid;
     height: 100vh;
     grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
-    grid-template-rows: 100px minmax(500px, 1fr);
+    grid-template-rows: 100px minmax(300px, 1fr);
     grid-template-areas: 
     "he he"
     "ma ma"
@@ -108,19 +108,17 @@ footer {
 
 main {
     text-align: center;
-    grid-area: ma2;
-    background-image: url("/img/animals/animales.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-
-    
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
 }
+
 
 .main2 {
     text-align: center;
-    grid-area: ma;
-    background-color: coral;
+    grid-area: ma2;
 }
 
 .article_about {
