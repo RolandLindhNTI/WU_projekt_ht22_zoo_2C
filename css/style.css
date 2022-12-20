@@ -25,7 +25,6 @@
     grid-template-areas: 
     "he he"
     "ma ma"
-    "ma2 ma2"
     "ar_a se_a"
     "se_a2 ar_a2"
     "ar_a3 se_a3"
@@ -43,7 +42,6 @@ header {
     background: #1abc9c;
     color: white;
     font-size: 30px;
-    overflow: hidden;
     grid-area: he;
 }
 
@@ -136,6 +134,7 @@ footer {
     background: coral;
     grid-area: ar_a3;
     margin-left: 100px;
+    margin-bottom: 10px;
 }
 
 .section_about {
@@ -162,12 +161,13 @@ footer {
     margin-right: 100px;
     text-align: center;
     padding: 200px;
+    margin-bottom: 10px;
 }
 
 /* Card layout*/
 #cardlayout {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -176,10 +176,11 @@ footer {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 40%;
+    width: 20%;
     border-radius: 30px;
     margin-left: 50px;
     margin-top: 25px;
+    margin-bottom: 25px;
   }
   
   .card:hover {
