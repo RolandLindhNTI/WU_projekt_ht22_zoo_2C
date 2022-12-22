@@ -13,6 +13,7 @@
     "he he"
     "se ar"
     "ar2 se2"
+    "pi ar3"
     "fo fo"
     ;
 }
@@ -35,11 +36,11 @@
 body {
     margin: 0;
 }
-
+/* Header och landing page */
 header {
     padding: 30px;
     text-align: center;
-    background: #1abc9c;
+    background: #ffffff;
     color: white;
     font-size: 30px;
     grid-area: he;
@@ -56,8 +57,8 @@ header a {
 }
 
 header a:hover {
-    background-color: rgb(255, 255, 255);
-    color: black;
+    background-color: rgb(106, 198, 199);
+    color: rgb(255, 255, 255);
   }
   
 
@@ -68,100 +69,112 @@ header a.active {
 
 article {
     grid-area: ar;
-    background: blue;
+    background: white;
     text-align: center;
-    padding: 200px;
-
+    padding: 75px;
 }
 
 .section1 {
     grid-area: se;
-    background: yellow;
-    text-align: center;
-    padding: 200px;
+    background: white;
+    margin-left: 220px;
+    margin-top: 10px;
 }
 
 .article2 {
     grid-area: ar2;
-    background: blue;
+    background: white;
     text-align: center;
-    padding: 200px;
+    padding: 75px;
+}
 
+.article3 {
+    grid-area: ar3;
+    background: white;
+    text-align: center;
+    padding: 75px;
 }
 
 .section2 {
     grid-area: se2;
-    background: yellow;
-    text-align: center;
-    padding: 200px;
+    background: white;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 
 footer {
-    background-color: red;
+    background-color: rgb(106, 198, 199, 0.4);
     grid-area: fo;
-    text-align: center;
     padding: 15px;
 }
 
+#pass_experience {
+    grid-area: pi;
+    margin-left: 90px;
+}
 
 /* About page */
 .main {
+    grid-area: ma;
+    background-color: rgb(243, 219, 175, 0.5);
     text-align: center;
-    grid-area: ma2;
-    text-align: center;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(0, 0, 0);
+    padding-top: 80px;
 }
 
 .article_about {
-    background: coral;
+    background: white;
     grid-area: ar_a;
     margin-left: 100px;
 
 }
 .article_about_2 {
-    background: coral;
+    background: white;
     grid-area: ar_a2;
     margin-right: 100px;
 
 }
 
 .article_about_3 {
-    background: coral;
+    background: white;
     grid-area: ar_a3;
     margin-left: 100px;
     margin-bottom: 10px;
 }
 
 .section_about {
-    background: greenyellow;
+    background: white;
     grid-area: se_a;
     margin-right: 100px;
-    text-align: center;
-    padding: 200px;
-
+    padding-top: 4px;
 }
 
 .section_about_2 {
-    background: greenyellow;
+    background: white;
     grid-area: se_a2;
     margin-left: 100px;
-    text-align: center;
-    padding: 200px;
-    
+    padding-top: 4px;
+    padding-left: 302px;
 }
 
 .section_about_3 {
-    background: greenyellow;
+    background: white;
     grid-area: se_a3;
     margin-right: 100px;
-    text-align: center;
-    padding: 200px;
     margin-bottom: 10px;
+    padding-top: 4px;
+}
+
+#smoothie {
+    width: 90%;
+}
+
+#pizza {
+    width: 95%;
+}
+
+#panda {
+    
 }
 
 /* Card layout*/
@@ -178,7 +191,7 @@ footer {
     transition: 0.3s;
     width: 20%;
     border-radius: 30px;
-    margin-left: 50px;
+    margin-left: 40px;
     margin-top: 25px;
     margin-bottom: 25px;
   }
@@ -194,4 +207,8 @@ footer {
   .container {
     padding: 5px 16px;
 
+  }
+
+  #main_info {
+    text-align: center;
   }
