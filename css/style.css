@@ -22,7 +22,7 @@
     display: grid;
     height: 100vh;
     grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
-    grid-template-rows: 100px minmax(300px, 1fr);
+    grid-template-rows: 100px minmax(90px, 1fr);
     grid-template-areas: 
     "he he"
     "ma ma"
@@ -119,7 +119,6 @@ footer {
     grid-area: ma;
     background-color: rgb(243, 219, 175, 0.5);
     text-align: center;
-    padding-top: 80px;
 }
 
 .article_about {
